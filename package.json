@@ -6,6 +6,11 @@
   "repository": "git@github.com:the-contract/thecontract.io.git",
   "author": "Craig Hammell <cilphex@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "yarn run clean && webpack",
+    "clean": "rm -rf dist",
+    "test": "eslint ."
+  },
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -15,11 +20,20 @@
     "css-loader": "^0.28.7",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
+    "http-server": "^0.10.0",
     "node-sass": "^4.5.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "webpack": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
   }
 }
